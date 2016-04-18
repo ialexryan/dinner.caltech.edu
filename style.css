@@ -13,6 +13,16 @@ html, body, .viewport {
 	overflow: hidden;
 }
 
+#fullweek {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	text-align: center;
+	font-family: sans-serif;
+}
+#fullweek a {
+	color: #AAA;
+}
+
 #label {
 	margin-top: 10px;
 	margin-bottom: 10px;
