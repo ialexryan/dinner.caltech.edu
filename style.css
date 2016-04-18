@@ -27,3 +27,13 @@ html, body, .viewport {
 	background-position: center;
 	flex-grow: 2;
 }
+
+#footer {
+	margin: 10px;
+}
+#footer p {
+	font-size: 8pt;
+	margin: 2px;
+	font-family: sans-serif;
+	text-align: right;
+}
