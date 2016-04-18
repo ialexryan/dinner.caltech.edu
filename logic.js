@@ -28,8 +28,8 @@ switch(day) {
 	    break;
 	default:
 	    dayText = "Monday";
-	    document.getElementById("error").textContent = "It's the weekend.";
+	    label.textContent += "It's the weekend. ";
 }
 
-menu.src = dayText + ".png";
-label.textContent = "Here's " + dayText + "'s dinner menu:";
+menu.style.backgroundImage = "url('" + dayText + ".png')";
+label.textContent += "Here's " + dayText + "'s dinner menu:";
