@@ -32,4 +32,4 @@ switch(day) {
 }
 
 menu.style.backgroundImage = "url('" + dayText + ".png')";
-label.textContent += "Here's " + dayText + "'s dinner menu:";
+label.textContent += dayText + "'s menu:";
