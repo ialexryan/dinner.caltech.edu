@@ -27,9 +27,14 @@ switch(day) {
 	    dayText = "Friday";
 	    break;
 	default:
-	    dayText = "Monday";
-	    label.textContent += "It's the weekend. ";
+	    dayText = "Weekend";
+	    label.textContent += "It's the weekend. New menus coming soon.";
+      var fullweek = document.getElementById("fullweek");
+      fullweek.parentNode.removeChild(fullweek);
 }
 
 menu.style.backgroundImage = "url('" + dayText + ".png')";
-label.textContent += dayText + "'s menu:";
+
+if (dayText != "Weekend") {
+  label.textContent += dayText + "'s menu:";
+}
