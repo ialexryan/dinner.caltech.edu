@@ -16,7 +16,7 @@ for i in range(0, height):
     top_of_grid = i
     break
 assert(top_of_grid != -1)
-print "Found the top of the grid at row " + str(top_of_grid)
+# print "Found the top of the grid at row " + str(top_of_grid)
 
 # Now we're going to find the bottom of the grid. It's the same idea,
 # but a little trickier because we have to ignore the two rows of
@@ -39,7 +39,7 @@ for i in reversed(range(0, height)):
 assert(bottom_of_legend)
 assert(top_of_legend)
 assert(bottom_of_grid != -1)
-print "Found the bottom of the grid at row " + str(bottom_of_grid)
+# print "Found the bottom of the grid at row " + str(bottom_of_grid)
 
 # Now that we know where the top of the grid is, we're going to iterate
 # over the row of pixels just under it and identify all the column boundaries.
@@ -52,7 +52,7 @@ for i in range(0, width):
 		boundaries.append(i)
 assert(len(boundaries) == 7)
 assert(width/3 not in boundaries)
-print "We found column boundaries at " + str(boundaries)
+# print "We found column boundaries at " + str(boundaries)
 
 Monday = im.crop((boundaries[1], top_of_grid, boundaries[2], bottom_of_grid))
 Tuesday = im.crop((boundaries[2], top_of_grid, boundaries[3], bottom_of_grid))
