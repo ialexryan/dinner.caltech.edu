@@ -10,11 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <link href="style.css" type="text/css" rel="stylesheet" />
-
-    <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-		for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
-		mixpanel.init("277e2e7d6582cdadb1cb3cd34373e97a");</script><!-- end Mixpanel -->
-	<script type="text/javascript">mixpanel.track("Page loaded");</script>
 </head>
 <body>
 <div class="flex-container">
@@ -22,17 +17,12 @@
 	<h3 id="label"></h3>
 	<div id="menu"></div> <!-- This div's background image is the menu. -->
 	<div id="footer">
-		<del>
-		<p>Created by <a id="melink" href="http://www.alexryan.org/" target="_blank">Alex Ryan '17</a>. A service of <a id="ruddocklink" href="http://ruddock.caltech.edu" target="_blank">Ruddock House</a>.</p>
-        </del>
+
+		<p>Created by <a id="melink" href="http://www.alexryan.org/" target="_blank">Alex Ryan '17</a>. <del>A service of <a id="ruddocklink" href="http://ruddock.caltech.edu" target="_blank">Ruddock House</a>.</del></p>
 		<p>Fixed by <a id="melink" href="http://nicholascurrault.com/" target="_blank">Nicholas Currault '21</a>. A service of <a id="ruddocklink" href="http://dabney.caltech.edu" target="_blank">Dabney Hovse</a>.</p>
         <p><a id="githublink" href="https://github.com/nicktendo64/dinner.caltech.edu" target="_blank">Check out the source code on Github!</a></p>
 	</div>
 </div>
 </body>
 <script type="text/javascript" src="logic.js"></script>
-<script type="text/javascript">mixpanel.track_links("#fullweeklink", "clicked on link to full week's menu", {"referrer": document.referrer});
-                               mixpanel.track_links("#melink", "clicked on link to my site", {"referrer": document.referrer});
-                               mixpanel.track_links("#ruddocklink", "clicked on link to Ruddock site", {"referrer": document.referrer});
-                               mixpanel.track_links("#githublink", "clicked on link to Github", {"referrer": document.referrer});</script>
 </html>
