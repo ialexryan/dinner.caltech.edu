@@ -25,7 +25,7 @@ bottom_of_legend = False
 top_of_legend = False
 bottom_of_grid = -1
 for i in reversed(range(0, height)):
-  val = pix[(width/3), i]
+  val = pix[(width/4), i] # one cell in the legend is white at 1/3 over, so that was messing up
   if not bottom_of_legend:
     if val[0] < 255 and val[1] < 255:
       bottom_of_legend = True
