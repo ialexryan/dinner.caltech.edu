@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# TODO this only works on Mondays
-fname="Board_Menu_$(date +%-m).$(date +%-d).pdf"
-wget --quiet --timestamping "http://dining.sites.caltech.edu/documents/3195/$fname"
-pdftoppm -f 1 -singlefile -png $fname menu
+url=http://dining.sites.caltech.edu/$(curl -s http://dining.sites.caltech.edu/students | grep -o "/documents/[0-9]*/Board_Menu_[0-9]*\.[0-9]*\.pdf")
+
+echo $url
+wget -O menu.pdf --quiet --timestamping "$url"
+pdftoppm -f 1 -singlefile -png menu.pdf menu
