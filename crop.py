@@ -47,7 +47,7 @@ boundaries = []
 prev_val = pix[0, top_of_grid + 3]
 for i in range(1, width):
 	val = pix[i, top_of_grid + 3]
-	if val != prev_val
+	if val != prev_val:
 		if (i - 1) in boundaries:  # Avoid duplicates in the boundaries list
 			boundaries.remove(i - 1)
 		boundaries.append(i)
