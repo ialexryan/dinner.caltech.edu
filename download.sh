@@ -1,5 +1,6 @@
 #!/bin/bash
 
-wget --quiet --timestamping "http://dining.caltech.edu/documents/42-boardmenu.pdf"
-pdftoppm -f 1 -singlefile -png 42-boardmenu.pdf menu
+url=http://dining.sites.caltech.edu/$(curl -s http://dining.sites.caltech.edu/students | grep -o "/documents/[0-9]*/Board[A-Za-z0-9_\.]*\.pdf")
 
+wget -O menu.pdf --quiet --timestamping "$url"
+pdftoppm -f 1 -singlefile -png menu.pdf menu
