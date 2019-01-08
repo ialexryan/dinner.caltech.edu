@@ -44,12 +44,14 @@ assert(bottom_of_grid != -1)
 # Now that we know where the top of the grid is, we're going to iterate
 # over the row of pixels just under it and identify all the column boundaries.
 boundaries = []
-for i in range(0, width):
+prev_val = pix[0, top_of_grid + 3]
+for i in range(1, width):
 	val = pix[i, top_of_grid + 3]
-	if val[0] < 255 and val[1] < 255:
+	if val != prev_val
 		if (i - 1) in boundaries:  # Avoid duplicates in the boundaries list
 			boundaries.remove(i - 1)
 		boundaries.append(i)
+	prev_val = val
 assert(len(boundaries) == 7)
 assert(width/3 not in boundaries)
 # print "We found column boundaries at " + str(boundaries)
