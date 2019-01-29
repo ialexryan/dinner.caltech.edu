@@ -47,11 +47,10 @@ boundaries = []
 prev_val = pix[0, top_of_grid + 3]
 for i in range(1, width):
 	val = pix[i, top_of_grid + 3]
-	if val != prev_val:
-		if (i - 1) in boundaries:  # Avoid duplicates in the boundaries list
-			boundaries.remove(i - 1)
+	if val != prev_val and prev_val == (0,0,0):
 		boundaries.append(i)
 	prev_val = val
+print(boundaries)
 assert(len(boundaries) == 7)
 assert(width/3 not in boundaries)
 # print "We found column boundaries at " + str(boundaries)
