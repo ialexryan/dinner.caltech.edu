@@ -50,7 +50,6 @@ for i in range(1, width):
 	if val != prev_val and prev_val == (0,0,0):
 		boundaries.append(i)
 	prev_val = val
-print(boundaries)
 assert(len(boundaries) == 7)
 assert(width/3 not in boundaries)
 # print "We found column boundaries at " + str(boundaries)
